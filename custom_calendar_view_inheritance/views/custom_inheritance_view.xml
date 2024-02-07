@@ -1,0 +1,22 @@
+
+<data>
+    <record id="your_module_calendar_view_form" model="ir.ui.view">
+        <field name="name">calendar.view.form.custom</field>
+        <field name="model">hr.leave.report.calendar</field>
+        <field name="inherit_id" ref="hr_holidays.calendar_view_form"/>
+        <field name="arch" type="xml">
+            <data>
+                <!-- Add your custom field to the form view -->
+                <field name="your_custom_field" position="after">
+                    <field name="holiday_type"/>
+                    <field name="mode_company_id"/>
+                    <field name="category_id"/>
+                    <field name="department_id"/>
+                    <field name="multi_employee" invisible="1" force_save="1"/>
+                    <field name="employee_id"/>
+                    <field name="employee_ids"/>
+                </field>
+            </data>
+        </field>
+    </record>
+</data>

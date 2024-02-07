@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<odoo>
+    <record id="hr_contract_grade_view_form" model="ir.ui.view">
+        <field name="model">hr.contract</field>
+		<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+<!--            <xpath expr="//div[@id='resource_calendar_warning']" position="after">-->
+<!--                <field name="grade"/>-->
+<!--            </xpath>-->
+            <xpath expr="//field[@name='type_id']" position="after">
+                <field name="grade"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

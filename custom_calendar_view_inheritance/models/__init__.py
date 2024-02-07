@@ -1,0 +1,1 @@
+from . import custom_inheritance_view
